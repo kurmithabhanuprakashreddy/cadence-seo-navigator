@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -7,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from 'recharts';
-import { Search, TrendingUp, Youtube, Target, BarChart3, Settings, Plus, Eye, Click, DollarSign, Users } from 'lucide-react';
+import { Search, TrendingUp, Youtube, Target, BarChart3, Settings, Plus, Eye, MousePointer, DollarSign, Users } from 'lucide-react';
 
 const Index = () => {
   const [selectedKeyword, setSelectedKeyword] = useState('');
@@ -80,7 +79,7 @@ const Index = () => {
                   <p className="text-sm font-medium text-gray-600">Paid Clicks</p>
                   <p className="text-3xl font-bold text-blue-600">14.2K</p>
                   <p className="text-sm text-blue-500 flex items-center mt-1">
-                    <Click className="w-4 h-4 mr-1" />
+                    <MousePointer className="w-4 h-4 mr-1" />
                     +11% vs last month
                   </p>
                 </div>
